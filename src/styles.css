@@ -68,9 +68,6 @@ body {
   animation: moves-in-right .5s ease-out ;
 }
 
-.header-content {
-}
-
 .btn {
   display: inline-block;
   padding: 20px 40px;
