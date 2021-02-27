@@ -52,6 +52,7 @@ body {
 
 .header-title {
   margin-bottom: 60px;
+  backface-visibility: hidden;
 }
 .header-title-primary {
   display: block;
