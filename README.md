@@ -8,3 +8,6 @@
 ## INTRODUCTION TO SCSS(SASS)
 
 basic usage of scss, which contains variables, nesting, functions, mixins and extends. And the practice link in codepen is [here](https://codepen.io/frankisss/pen/dyOdrqz?editors=1100)
+
+## WRITE AND COMPILE SASS LOCALLY
+

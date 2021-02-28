@@ -1,0 +1,21 @@
+{
+  "name": "practice-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "sass src/sass/main.scss src/css/style.css",
+    "compile:watch": "sass src/sass/main.scss src/css/style.css --watch",
+    "live-server":"live-server --entry-file=src/index.html",
+    "dev":"npm run compile:watch ",
+    "see:sass": "sass --help"
+  },
+  "repository": "https://github.com/iamfrank3en/practice-css.git",
+  "author": "frank_shen <frank_shen@trendmicro.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
