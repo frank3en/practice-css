@@ -3,160 +3,156 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  font-family: "Lato", sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  font-weight: 400;
-  color: #fff;
+  font-size: 62.5%;
 }
 
 body {
-  padding: 14px;
+  font-family: "Lato", sans-serif;
+  /* font-size: 17px; */
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+  padding: 3rem;
+  /* inheritable */
+  box-sizing: border-box;
 }
 
 .header {
   height: 95vh;
-  width: 100%;
+  /* why not specify the width */
+  /* width: 100%; */
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url("../assets/hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;
+  /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
 }
-
-.header-icon-container {
+.header__logo-box {
   position: absolute;
-  top: 35px;
-  left: 35px;
+  top: 4rem;
+  left: 4rem;
 }
-
-.header-icon {
-  height: 40px;
+.header__logo {
+  height: 3.5rem;
   /* ?: set the HEIGHT of an img element */
 }
-
-.header-containers {
+.header__text-box {
+  position: absolute;
   text-align: center;
   /* set the text-align */
-  position: absolute;
   text-transform: uppercase;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.header-title {
-  margin-bottom: 60px;
+.heading-primary {
+  margin-bottom: 6rem;
   backface-visibility: hidden;
 }
-
-.header-title-primary {
+.heading-primary--main {
   display: block;
-  font-weight: 600;
-  font-size: 60px;
-  letter-spacing: 35px;
-  animation: moves-in-left 0.5s ease-out;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
+  animation: moves-in-left 1s ease-out;
 }
-
-.header-title-sub {
+.heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17px;
-  animation: moves-in-right 0.5s ease-out;
+  letter-spacing: 1.75rem;
+  animation: moves-in-right 1s ease-out;
 }
 
-.btn {
+/* OR .btn */
+.btn:link, .btn:visited {
   display: inline-block;
-  padding: 20px 40px;
-  border-radius: 140px;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
-
 .btn::after {
   content: "";
-  position: absolute;
   display: inline-block;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius: 140px;
+  border-radius: 10rem;
   height: 100%;
   width: 100%;
-  background-color: #fff;
   transition: all 0.5s;
 }
-
-.btn-white {
+.btn--white {
   color: #777;
   background-color: #fff;
 }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+.btn--white::after {
+  /* not inheritable */
+  background-color: #fff;
+  /* yes it is needed */
 }
-
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
 .btn:hover::after {
   transform: scale(2);
   opacity: 0;
 }
-
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-}
-
-.btn-animated {
+.btn--animated {
   animation: moves-in-bottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
 
 @keyframes moves-in-left {
   0% {
-    transform: translateX(-30px);
+    transform: translateX(-10rem);
     opacity: 0%;
   }
   80% {
-    transform: translateX(5px);
+    transform: translateX(1rem);
     opacity: 80%;
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0rem);
     opacity: 100%;
   }
 }
 @keyframes moves-in-right {
   0% {
-    transform: translateX(30px);
+    transform: translateX(10rem);
     opacity: 0%;
   }
   80% {
-    transform: translateX(-5px);
+    transform: translateX(-1rem);
     opacity: 80%;
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0rem);
     opacity: 100%;
   }
 }
 @keyframes moves-in-bottom {
   0% {
-    transform: translateY(100px);
+    transform: translateY(3rem);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0rem);
     opacity: 1;
   }
 }
