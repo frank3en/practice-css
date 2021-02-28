@@ -3,3 +3,9 @@ node_modules
 
 #git
 .git
+
+#yarn
+yarn*
+
+#package
+package-lock.json
