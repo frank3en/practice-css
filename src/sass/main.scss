@@ -59,18 +59,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.header-title {
+.heading-primary {
   margin-bottom: 60px;
   backface-visibility: hidden;
 }
-.header-title-primary {
+.heading-primary-main {
   display: block;
   font-weight: 600;
   font-size: 60px;
   letter-spacing: 35px;
   animation: moves-in-left 0.5s ease-out;
 }
-.header-title-sub {
+.heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;

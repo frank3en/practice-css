@@ -37,17 +37,17 @@ body {
   position: relative; /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
 }
 
-.header-icon-container {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.header-icon {
+.header__logo {
   height: 3.5rem; /* ?: set the HEIGHT of an img element */
 }
 
-.header-containers {
+.header__text-box {
   position: absolute;
   text-align: center; /* set the text-align */
   text-transform: uppercase;
@@ -56,18 +56,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.header-title {
+.heading-primary {
   margin-bottom: 6rem;
   backface-visibility: hidden;
 }
-.header-title-primary {
+.heading-primary--main {
   display: block;
   font-weight: 400;
   font-size: 6rem;
   letter-spacing: 3.5rem;
   animation: moves-in-left 1s ease-out;
 }
-.header-title-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -100,12 +100,12 @@ body {
   transition: all 0.5s;
 }
 
-.btn-white {
+.btn--white {
   color: #777;
   background-color: #fff;
 }
 
-.btn-white::after {
+.btn--white::after {
   /* not inheritable */
   background-color: #fff; /* yes it is needed */
 }
@@ -125,7 +125,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
-.btn-animated {
+.btn--animated {
   animation: moves-in-bottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
