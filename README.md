@@ -16,4 +16,9 @@ basic usage of scss, which contains variables, nesting, functions, mixins and ex
 
 [GIT🌲](https://github.com/iamfrank3en/practice-css/commit/cd16eae667c8eaaf8f1525c1c32d665e0cc97a5e)
 
-## 
+## CONVERT CSS TO SCSS WHILE USING BEM(BLOCK ELEMENT MODIFIER)
+
+
+## CSS ARCHITECTURE
+
+

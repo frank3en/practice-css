@@ -1,0 +1,34 @@
+.header {
+  height: 95vh;
+  /* why not specify the width */
+  /* width: 100%; */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.85),
+      rgba($color-primary-dark, 0.85)
+    ),
+    url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative; /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem; /* ?: set the HEIGHT of an img element */
+  }
+
+  &__text-box {
+    position: absolute;
+    text-align: center; /* set the text-align */
+    text-transform: uppercase;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
