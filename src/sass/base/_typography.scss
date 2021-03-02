@@ -1,6 +1,5 @@
 body {
   font-family: 'Lato', sans-serif;
-  /* font-size: 17px; */
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
@@ -46,5 +45,18 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-of-type) { // if it is set to origin "last-child", the style will set to the a link tag
+    margin-bottom: 3rem;
   }
 }
