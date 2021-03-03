@@ -125,6 +125,9 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.btn {
+  font-size: 1.6rem;
+}
 .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -173,6 +176,7 @@ body {
 }
 
 .btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
   text-decoration: none;
   color: #55c57a;
   display: inline-block;
