@@ -195,6 +195,11 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.card {
+  height: 50rem;
+  background-color: orangered;
+}
+
 .composition {
   position: relative;
 }
@@ -332,6 +337,12 @@ body {
 }
 .section-feature > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
