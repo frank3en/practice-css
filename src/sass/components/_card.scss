@@ -1,15 +1,14 @@
-.card {
+$card-height:52rem;
 
+.card {
   // FUNCTIONALITY
   perspective: 150rem; // works for its child element
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: $card-height;
   position: relative;
 
   &__side {
-    height: 50rem;
-    font-size: 2rem;
-    color: $color-white;
+    height: $card-height;
     position: absolute;
     left: 0;
     top: 0;
@@ -17,8 +16,8 @@
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-    transition: all .8s ease;
-    overflow: hidden; // to fix the image cover 
+    transition: all 0.8s ease;
+    overflow: hidden; // to fix the image as background image which caused no border-radius
     // add two side of the card
     &--front {
       background-color: $color-white;
@@ -59,22 +58,94 @@
   }
 
   // STYLING
-  &__picture{
+  &__picture {
     background-size: cover;
-    height: 32rem;
+    height: 23rem;
     background-blend-mode: screen; // blend-mode wow!!!
-    &--1{
+    -webkit-background-clip: polygon(
+      0 0,
+      100% 0,
+      100% 85%,
+      0 100%
+    ); // set the prefix to handle different browsers
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 85%,
+      0 100%
+    ); // set the polygon function!!
+
+    &--1 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-secondary-light,
-        $color-secondary-dark
-      ), url(../assets/nat-5.jpg);
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(../assets/nat-5.jpg);
     }
-    &--2{
+    &--2 {
       background-image: url(../assets/nat-4.jpg);
     }
-    &--3{
+    &--3 {
       background-image: url(../assets/nat-6.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 57%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; // new css property
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none; // for the dot is not text-do
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
     }
   }
 }
