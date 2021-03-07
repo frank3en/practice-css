@@ -74,6 +74,8 @@ $card-height: 52rem;
       100% 85%,
       0 100%
     ); // set the polygon function!!
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(
