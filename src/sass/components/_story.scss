@@ -6,7 +6,7 @@ $correct-the-transform: skewX(12deg);
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color: $color-black, $alpha: 0.1);
-  background-color: $color-white;
+  background-color: rgba($color-white, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -28,8 +28,8 @@ $correct-the-transform: skewX(12deg);
   &__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
-    backface-visibility: hidden;  // little bugs
-    transition: all .5s;
+    backface-visibility: hidden; // little bugs
+    transition: all 0.5s;
   }
 
   &__text {
@@ -52,12 +52,13 @@ $correct-the-transform: skewX(12deg);
     // transform: translate(-50% -50%); // why not work forget the comma
   }
 
-  &:hover &__caption { // WHAT IF I WANT TO HOVER THE IMAGE ?? HOW TO IMPL THAT. A: SET THE Z-INDX CAUSE THE TEXT PART IS OVERLAPPED 
+  &:hover &__caption {
+    // WHAT IF I WANT TO HOVER THE IMAGE ?? HOW TO IMPL THAT. A: SET THE Z-INDX CAUSE THE TEXT PART IS OVERLAPPED
     transform: translate(-50%, -50%);
     opacity: 1;
   }
 
-  &:hover &__img{
+  &:hover &__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
   }
