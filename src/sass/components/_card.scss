@@ -1,4 +1,4 @@
-$card-height:52rem;
+$card-height: 52rem;
 
 .card {
   // FUNCTIONALITY
@@ -57,7 +57,7 @@ $card-height:52rem;
     transform: rotateY(0);
   }
 
-  // STYLING
+  // FRONT SIDE STYLING
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -84,10 +84,20 @@ $card-height:52rem;
         url(../assets/nat-5.jpg);
     }
     &--2 {
-      background-image: url(../assets/nat-4.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../assets/nat-4.jpg);
     }
     &--3 {
-      background-image: url(../assets/nat-6.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../assets/nat-6.jpg);
     }
   }
 
@@ -147,5 +157,29 @@ $card-height:52rem;
         }
       }
     }
+  }
+
+  // BACK SIDE STYLING
+  &__cta {
+    // position it to center
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100; // more big more thin, avoid it to be big and bold
   }
 }

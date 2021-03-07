@@ -125,6 +125,14 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 8rem;
+}
+
 .btn {
   font-size: 1.6rem;
 }
@@ -157,6 +165,13 @@ body {
   /* not inheritable */
   background-color: #fff;
   /* yes it is needed */
+}
+.btn--green {
+  color: #fff;
+  background-color: #55c57a;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -246,10 +261,10 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../assets/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: url(../assets/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../assets/nat-4.jpg);
 }
 .card__picture--3 {
-  background-image: url(../assets/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../assets/nat-6.jpg);
 }
 .card__heading {
   font-size: 1.8rem;
@@ -291,6 +306,26 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 .composition {
@@ -435,7 +470,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
 }
 
