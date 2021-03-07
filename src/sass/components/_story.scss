@@ -13,6 +13,7 @@ $correct-the-transform: skewX(12deg);
   transform: $parent-skew-transform;
 
   &__shape {
+    position: relative;
     height: 15rem;
     width: 15rem;
     background-color: rosybrown;
@@ -26,9 +27,38 @@ $correct-the-transform: skewX(12deg);
 
   &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;  // little bugs
+    transition: all .5s;
   }
 
   &__text {
     transform: $correct-the-transform;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%); // for animation
+    opacity: 0;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    // transform: translate(-50% -50%); // why not work forget the comma
+  }
+
+  &:hover &__caption { // WHAT IF I WANT TO HOVER THE IMAGE ?? HOW TO IMPL THAT. A: SET THE Z-INDX CAUSE THE TEXT PART IS OVERLAPPED 
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  &:hover &__img{
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
