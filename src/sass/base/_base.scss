@@ -1,5 +1,3 @@
-
-
 *,
 *::after,
 *::before {
@@ -15,5 +13,6 @@ html {
 
 body {
   /* inheritable */
+  color: $color-grey-dark;
   box-sizing: border-box;
 }
