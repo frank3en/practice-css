@@ -18,6 +18,11 @@
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: 0.1);
       border-bottom: 3px solid $color-primary;
+
+      &:invalid {
+        // validate the input
+        border-bottom: 3px solid $color-secondary-dark;
+      }
     }
 
     &::-webkit-input-placeholder {
@@ -26,5 +31,19 @@
   }
 
   &__label {
+    font-style: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.2s;
   }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  // two kinds of sibling selector + and ~
 }

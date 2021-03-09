@@ -421,9 +421,26 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #55c57a;
 }
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
 .form__input::-webkit-input-placeholder {
   color: #999;
 }
+.form__label {
+  font-style: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.2s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
 .story {
   font-size: 1.6rem;
   width: 75%;
