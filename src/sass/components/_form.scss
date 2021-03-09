@@ -40,11 +40,19 @@
     transition: all 0.2s;
   }
 
+  // two kinds of sibling selector + and ~
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
   }
 
-  // two kinds of sibling selector + and ~
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+  }
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+  }
 }
