@@ -1,7 +1,8 @@
 .btn {
-  font-size: 1.6rem;
+  &,
   &:link,
   &:visited {
+    //
     display: inline-block;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -9,10 +10,13 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &::after {
-    content: '';
+    content: "";
     display: inline-block;
     position: absolute;
     top: 0;
@@ -38,7 +42,7 @@
     color: $color-white;
     background-color: $color-primary;
 
-    &::after{
+    &::after {
       background-color: $color-primary;
     }
   }
@@ -53,7 +57,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
   }
