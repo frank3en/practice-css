@@ -568,6 +568,56 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  color: #f7f7f7;
+  font-size: 1.4rem;
+}
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.footer__logo {
+  width: 15rem;
+  height: auto;
+}
+.footer__navigation {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  display: inline-block;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer__link {
+  background-color: #333;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.footer__link:link, .footer__link:visited {
+  text-decoration: none;
+  color: #55c57a;
+}
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  transform: rotate(20deg) scale(1.2);
+}
+.footer__copyright {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  width: 80%;
+  float: right;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;

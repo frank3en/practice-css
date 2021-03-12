@@ -1,7 +1,15 @@
 @mixin clearfix {
-  &::after{
+  &::after {
     content: "";
     clear: both;
     display: table;
+  }
+}
+
+@mixin ease-decorator {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary;
   }
 }
