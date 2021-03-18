@@ -18,6 +18,63 @@ basic usage of scss, which contains variables, nesting, functions, mixins and ex
 
 ## CSS ARCHITECTURE
 
-## something important
+## FRESH KNOWLEDGE
 
-1. we can't animate some values, like `display:none`, cuz it has no numberic value.
+### NAVIGATION-PART
+
+`transform-origin` -> default to center.
+
+`+ selector` direct sibling element
+
+`~ selector` general sibling element might not be the next to it.
+
+==hijack the checkbox== or ==checkbox hack==?
+
+`checkbox:check` and `display:none`
+
+**solid-gradient animation**
+
+`background-position`
+
+`background-size`
+
+**cubic-bezier function**
+
+[bezier function](https://easings.net/)
+
+### POPUP PART
+
+**An anchor is the elements' id, use `<a href="#id"/>` can route to the correspond anchor**
+
+`anchor -> anchor-element:target`
+
+**some attributes can not be animated**
+
+e.g `display:none` --> instead --> `opacity:0; visibility:hidden`;
+
+**Same element can only have ONE `transform` attribute**
+
+use last `transform` overwrite the former one.
+
+**`display:table` can be used to make sibling elements have the same HEIGHT**
+
+```
+    parent-element{display:table}
+
+    siblings
+        {
+            display:table-cell;
+            vertical-align:middle;
+        }
+```
+
+**`column` attribute which can separate a paragraph in to specified columns**
+
+```
+    column-count:2; (numbers)
+    column-gap: 4rem (space between gaps)
+```
+
+**`hyphens` use with <html lang='LANGUAGE'></html>**
+
+add `-` to a word at the end of line.
