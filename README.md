@@ -58,21 +58,23 @@ use last `transform` overwrite the former one.
 
 **`display:table` can be used to make sibling elements have the same HEIGHT**
 
-```
-    parent-element{display:table}
+```css
+parent-element {
+  display: table;
+}
 
-    siblings
-        {
-            display:table-cell;
-            vertical-align:middle;
-        }
+siblings {
+  display: table-cell;
+  vertical-align: middle;
+}
 ```
 
 **`column` attribute which can separate a paragraph in to specified columns**
 
-```
-    column-count:2; (numbers)
-    column-gap: 4rem (space between gaps)
+```css
+column-count: 2; // numbers
+column-gap: 4rem; // space between gaps
+column-rule: 1px solid $color-grey-light-2;
 ```
 
 **`hyphens` use with <html lang='LANGUAGE'></html>**
