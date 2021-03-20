@@ -683,6 +683,12 @@ body {
   position: relative;
   /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
 }
+@media (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -708,6 +714,11 @@ body {
   color: #f7f7f7;
   font-size: 1.4rem;
 }
+@media (max-width: 56.25em) {
+  .footer {
+    padding: 8rem 0;
+  }
+}
 .footer__logo-box {
   text-align: center;
   margin-bottom: 8rem;
@@ -720,6 +731,12 @@ body {
   border-top: 1px solid #eee;
   padding-top: 2rem;
   display: inline-block;
+}
+@media (max-width: 56.25em) {
+  .footer__navigation {
+    width: 100%;
+    text-align: center;
+  }
 }
 .footer__list {
   list-style: none;
@@ -751,6 +768,12 @@ body {
   width: 80%;
   float: right;
 }
+@media (max-width: 56.25em) {
+  .footer__copyright {
+    width: 100%;
+    float: none;
+  }
+}
 
 .row {
   max-width: 114rem;
@@ -759,6 +782,7 @@ body {
 @media (max-width: 56.25em) {
   .row {
     max-width: 50rem;
+    padding: 0 3rem;
   }
 }
 .row::after {
@@ -826,6 +850,18 @@ body {
   text-align: center;
   cursor: pointer;
 }
+@media (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -836,6 +872,18 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
+}
+@media (max-width: 56.25em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 }
 .navigation__nav {
   height: 100vh;
