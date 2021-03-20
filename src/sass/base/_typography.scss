@@ -1,8 +1,7 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -15,6 +14,11 @@ body {
     font-size: 6rem;
     letter-spacing: 3.5rem;
     animation: moves-in-left 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
   &--sub {
     display: block;
@@ -22,6 +26,11 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moves-in-right 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      // font-size: 5rem;
+    }
   }
 }
 
@@ -42,6 +51,14 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.5s;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
@@ -56,7 +73,8 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
-  &:not(:last-of-type) { // if it is set to origin "last-child", the style will set to the a link tag
+  &:not(:last-of-type) {
+    // if it is set to origin "last-child", the style will set to the a link tag
     margin-bottom: 3rem;
   }
 }

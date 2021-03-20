@@ -80,3 +80,14 @@ column-rule: 1px solid $color-grey-light-2;
 **`hyphens` use with <html lang='LANGUAGE'></html>**
 
 add `-` to a word at the end of line.
+
+### MEDIA QUERY
+
+#### BRIEF
+
+- `@media(max-width:xxx)` and `@media(min-width:xxx)` diffs.
+- sass mixin to write media query.
+- 3 ways to write media query : bad\good\perfect.
+- `_typography.scss` and `_base.scss` 里面分别应该存在什么内容
+
+#### DIFF with `max-width` and `min-width`
