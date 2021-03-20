@@ -1,23 +1,35 @@
-.featurebox{
+.featurebox {
   text-align: center;
-  background: rgba($color: $color-white, $alpha: .8);
+  background: rgba($color: $color-white, $alpha: 0.8);
   font-size: 1.5rem;
   border-radius: 3px;
   padding: 2.5rem;
-  box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
-  transition: transform .3s;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
 
-  &:hover{
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &:hover {
     transform: translateY(-1.5px) scale(1.03);
   }
 
-
-  &__icon{
+  &__icon {
     font-size: 6rem;
-    background: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    background: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    margin-bottom: 0.5rem;
     -webkit-background-clip: text;
-    background-clip:text;
+    background-clip: text;
     display: inline-block;
     color: transparent;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
   }
 }
