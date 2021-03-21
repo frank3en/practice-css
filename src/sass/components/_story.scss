@@ -12,6 +12,16 @@ $correct-the-transform: skewX(12deg);
   padding-left: 9rem;
   transform: $parent-skew-transform;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
   &__shape {
     position: relative;
     height: 15rem;
@@ -23,6 +33,10 @@ $correct-the-transform: skewX(12deg);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) $correct-the-transform; // with NO comma
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -34,6 +48,10 @@ $correct-the-transform: skewX(12deg);
 
   &__text {
     transform: $correct-the-transform;
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {
