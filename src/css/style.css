@@ -747,15 +747,34 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+@media (max-width: 56.25em) {
+  .popup__left {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
 .popup__right {
   width: 66.666667%;
   display: table-cell;
   vertical-align: middle;
   padding: 3rem 5rem;
 }
+@media (max-width: 56.25em) {
+  .popup__right {
+    width: 100%;
+    display: block;
+  }
+}
 .popup__img {
   display: block;
   width: 100%;
+}
+@media (max-width: 56.25em) {
+  .popup__img {
+    display: inline-block;
+    width: 49%;
+  }
 }
 .popup__text {
   font-size: 1.4rem;
