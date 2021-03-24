@@ -90,6 +90,13 @@ add `-` to a word at the end of line.
 - 3 ways to write media query : bad\good\perfect.
 - content of `_typography.scss` and `_base.scss`.
 - `height:auto` means why card\_\_back not show?
--
 
 #### DIFF with `max-width` and `min-width`
+
+#### art direction
+
+some key words: `<img srcset />` `<source media srcset />`, desity descriptor, resolution switching.
+
+#### responsive image
+
+key words: `<img> sizes`, `<srcset>`, `width` descriptor.

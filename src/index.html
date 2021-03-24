@@ -99,17 +99,25 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="./assets/nat-1-large.jpg"
-                alt=""
+                alt="Photo 1"
+                srcset="./assets/nat-1.jpg 300w, ./assets/nat-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width:600px) 30vw, 300px"
                 class="composition__photo composition__photo--p1"
-              /><img
-                src="./assets/nat-2-large.jpg"
-                alt=""
+                src="./assets/nat-1-large.jpg"
+              />
+              <img
+                alt="Photo 2"
+                srcset="./assets/nat-2.jpg 300w, ./assets/nat-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width:600px) 30vw, 300px"
                 class="composition__photo composition__photo--p2"
-              /><img
-                src="./assets/nat-3-large.jpg"
-                alt=""
+                src="./assets/nat-2-large.jpg"
+              />
+              <img
+                alt="Photo 3"
+                srcset="./assets/nat-3.jpg 300w, ./assets/nat-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width:600px) 30vw, 300px"
                 class="composition__photo composition__photo--p3"
+                src="./assets/nat-3-large.jpg"
               />
             </div>
           </div>
@@ -428,6 +436,7 @@
             media="(max-width: 37.5em)"
           />
           <!-- careful about the () with media query -->
+          <!-- the last src is for user use other client that can not recognize the srcset attribute -->
           <img
             srcset="
               ./assets/logo-green-1x.png 1x,
@@ -435,6 +444,7 @@
             "
             alt="Full logo"
             class="footer__logo"
+            src="./assets/logo-green-2x.png"
           />
         </picture>
       </div>
