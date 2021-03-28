@@ -102,3 +102,6 @@ some key words: `<img srcset />` `<source media srcset />`, desity descriptor, r
 key words: `<img> sizes`, `<srcset>`, `width` descriptor.
 
 #### MEDIA (min-resolution) TO load different pics
+
+
+
