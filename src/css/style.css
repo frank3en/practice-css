@@ -814,13 +814,23 @@ body {
   /* why not specify the width */
   /* width: 100%; */
   color: #fff;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url("../assets/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url("../assets/hero-small.jpg");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
+}
+@media (min-resolution: 192dpi) and (min-width: 600px) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url("../assets/hero.jpg");
+  }
+}
+@media (min-width: 2000px) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url("../assets/hero.jpg");
+  }
 }
 @media (max-width: 37.5em) {
   .header {
