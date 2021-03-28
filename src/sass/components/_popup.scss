@@ -7,10 +7,17 @@
   background-color: rgba($color: $color-black, $alpha: 0.8);
   z-index: 9999;
   // display: none;
-
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  @supports(backdrop-filter: blur(10px) or (-webkit-backdrop-filter: blur(10px)) ){
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: $color-black, $alpha: 0.3);
+  }
 
   &__content {
     @include center;
