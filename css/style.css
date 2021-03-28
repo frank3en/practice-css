@@ -345,13 +345,13 @@ body {
   border-top-right-radius: 3px;
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../assets/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../assets/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-4.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../assets/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-6.jpg);
 }
 .card__heading {
   font-size: 1.8rem;
@@ -821,7 +821,7 @@ body {
 .header {
   height: 95vh;
   color: #fff;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url("../assets/hero-small.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -831,7 +831,7 @@ body {
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
   .header {
-    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url("../assets/hero.jpg");
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url("../img/hero.jpg");
   }
 }
 @media (max-width: 37.5em) {
@@ -1144,7 +1144,7 @@ body {
 
 .section-feature {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url(../assets/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -1190,20 +1190,20 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: 3px;
 }
 @media (max-width: 75em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../assets/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
     background-size: cover;
   }
 }
 @media (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../assets/nat-10.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
   }
 }
 .book__form {

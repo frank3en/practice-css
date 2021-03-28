@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "sass src/sass/main.scss src/css/style.css",
-    "compile:watch": "sass src/sass/main.scss src/css/style.css --watch",
-    "live-server":"live-server --entry-file=src/index.html",
-    "dev":"npm run compile:watch ",
+    "watch:scss": "sass sass/main.scss css/style.css --watch",
+    "compile:scss": "sass sass/main.scss css/style.comp.css",
+    "concat:css":"concat -o css/style.concat.css css/style.comp.css",
+    "live-server": "live-server --entry-file=index.html",
+    "dev": "npm run compile:watch ",
     "see:sass": "sass --help"
   },
   "repository": "https://github.com/iamfrank3en/practice-css.git",
   "author": "frank_shen <frank_shen@trendmicro.com>",
   "license": "MIT",
   "devDependencies": {
+    "concat": "^1.0.3",
     "sass": "^1.32.8"
   },
   "dependencies": {
