@@ -13,16 +13,16 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; /* IT IS IMPORTANT WHY SET POSITION RELATIVE. */
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),  // Comma is equal to a OR operation.
-         (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em), // in safari the min-resolution didn't work.
-         (min-width: 125em) {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
-      ),
-      url("../img/hero.jpg");
-  }
+  @media  only screen and (min-resolution: 192dpi) and (min-width: 37.5em),  /* // Comma is equal to a OR operation. */
+          only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),  
+          only screen and (min-width: 125em) {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, 0.85),
+                rgba($color-secondary-dark, 0.85)
+              ),
+              url("../img/hero.jpg");
+          }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
